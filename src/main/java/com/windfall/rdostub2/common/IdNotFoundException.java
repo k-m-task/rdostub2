@@ -1,10 +1,10 @@
-package com.windfall.rdostub2.exception;
+package com.windfall.rdostub2.common;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.NO_CONTENT, reason = "ID field either missing or malformed")
-public class IdNotFoundException extends RuntimeException {
+public class IdNotFoundException extends NullPointerException {
 
     /**
      *
